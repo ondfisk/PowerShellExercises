@@ -2,11 +2,14 @@
 
 These exercises are meant to get you familiar with basic PowerShell concepts and syntax.
 
+Note an item in angle brackes ([]) typically means a key so `[Win] + x` means "hold down the Windows key and hit x".
+
 Tips to maximise your learning:
 
 - Type *everything* by hand - don't copy paste.
 - Examine each command/line as you type it - try to guess what it does and confirm/check with `[Enter]`.
 - Don't skip anything.
+- If a command produces an error, try to read the error messages and understand why.
 
 ## Open your PowerShell command prompt
 
@@ -70,6 +73,14 @@ Stop-Process -Name powershell
 Stop-Process -Id [number]
 ```
 
+## Clear Screen
+
+```powershell
+Clear-Host
+cls
+clear
+```
+
 ## Tab Completion
 
 PowerShell supports tab completion so most commands can be auto completed by typing a few (defining) characters and hitting tab
@@ -94,8 +105,8 @@ help about_Core_Commands -ShowWindow
 ### Explore Help Switches
 
 ```powershell
-Get-Help -Name Get-Process -Detailed
-Get-Help -Name Get-Process -Full
+Get-Help -Name "Get-Process" -Detailed
+Get-Help -Name "Get-Process" -Full
 Get-Help -Name Get-Process -ShowWindow
 Get-Help -Name Get-Process -Online
 Get-Help -Name Get-Process -Parameter Name
@@ -146,6 +157,8 @@ ls .*
 ## Explore Switches
 
 ```powershell
+Set-Location $env:USERPROFILE
+cd .\Documents\
 ls -File
 ls -Directory
 ls -d

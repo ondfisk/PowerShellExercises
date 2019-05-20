@@ -7,6 +7,7 @@ Tips to maximise your learning:
 - Type *everything* by hand - don't copy paste.
 - Examine each command/line as you type it - try to guess what it does and confirm/check with `[Enter]`.
 - Don't skip anything.
+- If a command produces an error, try to read the error messages and understand why.
 
 ## Built-in Values
 

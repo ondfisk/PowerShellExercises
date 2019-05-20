@@ -7,6 +7,7 @@ Tips to maximise your learning:
 - Type *everything* by hand - don't copy paste.
 - Examine each command/line as you type it - try to guess what it does and confirm/check with `[Enter]`.
 - Don't skip anything.
+- If a command produces an error, try to read the error messages and understand why.
 
 ## Exploring Objects
 
@@ -43,6 +44,17 @@ help sort -Online
 Get-Service | Sort-Object -Property Name
 Get-Service | Sort-Object -Property Status,Name -Descending
 Get-Service | Sort-Object -Property Name -Descending
+```
+
+## Format
+
+```powershell
+help fl -Online
+help ft -Online
+gsv | select Name, Status | Format-List
+gsv | select Name, Status | fl
+gsv | select Name, Status | Format-Table
+gsv | select Name, Status | ft
 ```
 
 ## Combine Select, Where, and Sort

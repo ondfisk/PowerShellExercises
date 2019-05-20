@@ -7,6 +7,7 @@ Tips to maximise your learning:
 - Type *everything* by hand - don't copy paste.
 - Examine each command/line as you type it - try to guess what it does and confirm/check with `[Enter]`.
 - Don't skip anything.
+- If a command produces an error, try to read the error messages and understand why.
 
 ## Nesting Commands
 
@@ -15,6 +16,8 @@ Get-EventLog Security -Computer Server-R2,DC4,Files02
 Get-EventLog Security -Computer 'Server-R2','Files02'
 Get-EventLog Security -Computer 'Server-R2,Files01'
 ```
+
+Why does the last command not work?
 
 Create a text file with the following content:
 
@@ -27,6 +30,8 @@ DC03
 ```
 
 Save it as `names.txt`.
+
+(Substitute names above with with computers your have access to - maybe just your own)
 
 ```powershell
 Get-EventLog Application -Computer (Get-Content names.txt)
@@ -67,4 +72,4 @@ Export-Csv "users.csv" –NoTypeInformation – Delimiter ";"
 ```
 
 What does it do?
-Modify script to work in your environment and run it!
+Modify script to work in your environment (if possible) and run it!
