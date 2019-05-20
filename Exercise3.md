@@ -31,7 +31,7 @@ gsv | select -Skip 5 -First 5
 help where -Online
 Get-Service | Where-Object -Property Status -EQ -Value Stopped
 Get-Service | Where-Object Status -eq "Stopped"
-Get-Service | Where-Object Status -eq "Stopped"
+Get-Service | where Status -eq 'Stopped'
 Get-Service | Where-Object {$_.Status -eq "Stopped"}
 gsv | where {$_.Status -eq "Stopped"}
 gsv | ? Status -eq Stopped
