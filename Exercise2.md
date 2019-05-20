@@ -9,6 +9,14 @@ Tips to maximise your learning:
 - Don't skip anything.
 - If a command produces an error, try to read the error messages and understand why.
 
+## Modules
+
+```powershell
+Get-Module
+Get-InstalledModule
+Get-Command -Module ActiveDirectory
+```
+
 ## Nesting Commands
 
 ```powershell
