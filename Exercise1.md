@@ -164,6 +164,8 @@ ls -Directory
 ls -d
 ls -f
 ls -di
+cd "C:\Windows"
+cd ~
 ```
 
 ## Common Parameters
